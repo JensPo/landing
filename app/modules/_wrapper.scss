@@ -1,0 +1,31 @@
+.wrapper {
+	width: 100%;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+
+	&--hero {
+		top: 25%;
+	}
+
+	&--features {
+		top: 15%;
+		position: relative;
+	}
+
+	&--text {
+		position: relative;
+		width: 60%;
+		margin:0 auto;
+	}
+
+	&--registration {
+		position: relative;
+		top: 25%;
+	}
+
+	&--nav {
+		display: inline-block;
+		margin: 40px;
+	}
+}

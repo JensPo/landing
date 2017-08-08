@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,300|Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #f6f5f3;
+	font-family: 'Exo 2', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	font-family: inherit;
+	color: white;
+
+	li {
+
+		:first-child {
+			color: #6e6e6d;
+		}
+	}
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: #6e6e6d;
+}
+
+input::placeholder {
+	color: #eff0f7;
+}

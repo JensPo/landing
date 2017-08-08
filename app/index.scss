@@ -1,158 +1,14 @@
 
-$pink: #ff6d6d;
-////////////button/////////////////
-.button {
-	background: none;
-	border: none;
-	cursor: pointer;
-	outline: none;
-	padding: 0;
+@import 'base/_variables';
+@import 'base/_global';
+@import 'modules/_heading';
+@import 'modules/_large-hero';
+@import 'modules/_wrapper';
+@import 'modules/_button';
+@import 'modules/_features';
+@import 'modules/_registration';
+@import 'modules/_footer';
 
-	&--registration {
-		width: 250px;
-		height: 50px;
-		background: $pink;
-		text-transform: uppercase;
-		color: white;
-		font-size: 1em;
-		border-radius: 3px;
-		margin: 10px;
-
-		&--input {
-			background: #464c77;
-			cursor: default;
-			color: white;
-		}
-	}
-
-	&--terms {
-		font-family: 'Roboto', sans-serif;
-		font-size: 1em;
-		color: white;
-		text-decoration: underline;
-	}
-
-	:hover {
-		opacity: 0.7;
-	}
-}
-
-////////////global/////////////////
-@import url('https://fonts.googleapis.com/css?family=Exo+2:100,300|Roboto');
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-	background-color: #f6f5f3;
-	font-family: 'Exo 2', sans-serif;
-}
-
-a {
-	text-decoration: none;
-}
-
-ul {
-	list-style-type: none;
-	font-family: inherit;
-	color: white;
-
-	li {
-
-		:first-child {
-			color: #6e6e6d;
-		}
-	}
-}
-
-p {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1em;
-	color: #6e6e6d;
-}
-
-input::placeholder {
-	color: #eff0f7;
-}
-
-////////////hero///////////////////
-.large-hero {
-	width: 100%;
-	height: 100vh;
-	margin-top: -4px;
-	overflow: auto;
-}
-////////////wrapper////////////////
-.wrapper {
-	width: 100%;
-	position: absolute;
-	margin: 0 auto;
-	text-align: center;
-
-	&--hero {
-		top: 25%;
-	}
-
-	&--features {
-		top: 15%;
-		position: relative;
-	}
-
-	&--text {
-		position: relative;
-		width: 60%;
-		margin:0 auto;
-	}
-
-	&--registration {
-		position: relative;
-		top: 25%;
-	}
-
-	&--nav {
-		display: inline-block;
-		margin: 40px;
-	}
-}
-
-////////////heading////////////////
-$pink: #ff6d6d;
-
-.heading {
-	font-size: 2.5em;
-	font-weight: 300;
-	margin: 0 0 30px 0;
-
-	&--hero {
-		font-size: 3.5em;
-		font-weight: 100;
-		color: #4c4c4c;
-		margin: 20px;
-	}
-
-	&--features {
-		font-size: 1em;
-		color: $pink;
-		font-family: 'Roboto', sans-serif;
-		text-transform: uppercase;
-		margin: 0;
-		letter-spacing: 0.2em;
-	}
-
-	&--white {
-		color: white;
-	}
-}
-///////////////////////////////
-
-
-.features {
-	height: 100vh;
-	width: 100%;
-}
 
 #mac-window {
 	height: 60%;
@@ -162,14 +18,4 @@ $pink: #ff6d6d;
 #terms {
 	color: white;
 	opacity: 0.6;
-}
-
-.registration {
-	background-color: #323969;
-	height: 50vh;
-}
-
-.footer {
-	background-color: #232323;
-	height: 40vh;
 }
